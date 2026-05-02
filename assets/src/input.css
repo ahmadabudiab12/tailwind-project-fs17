@@ -29,7 +29,7 @@
     @apply flex items-center
 }
 
-@utility nav-link{
+@utility link{
 
     @apply text-xs text-navlink hover:text-black hover:scale-130 hover:underline inline-block transition-all duration-500;
 }
