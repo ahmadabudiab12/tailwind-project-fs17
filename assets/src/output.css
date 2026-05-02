@@ -232,8 +232,14 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .nav-link {
     display: inline-block;
@@ -277,11 +283,17 @@
   .table {
     display: table;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
   .flex-1 {
     flex: 1;
+  }
+  .flex-2 {
+    flex: 2;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -297,6 +309,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -407,6 +422,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -416,8 +434,14 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-22 {
     padding-inline: calc(var(--spacing) * 22);
@@ -473,11 +497,17 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
   .py-\[1\] {
     padding-block: 1;
+  }
+  .py-\[6\] {
+    padding-block: 6;
   }
   .py-\[17\] {
     padding-block: 17;
@@ -488,17 +518,41 @@
   .py-\[17px\] {
     padding-block: 17px;
   }
+  .py-\[64\] {
+    padding-block: 64;
+  }
+  .py-\[64p\] {
+    padding-block: 64p;
+  }
+  .py-\[64px\] {
+    padding-block: 64px;
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
   }
   .pt-11 {
     padding-top: calc(var(--spacing) * 11);
   }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-17 {
+    padding-bottom: calc(var(--spacing) * 17);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-start {
+    text-align: start;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -577,6 +631,11 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
+    }
+  }
+  .sm\:px-0 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:flex {
