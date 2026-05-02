@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -16,8 +18,6 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -26,7 +26,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --font-weight-bold: 700;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -271,48 +270,6 @@
   .table {
     display: table;
   }
-  .w-\[c\] {
-    width: c;
-  }
-  .w-\[ca\] {
-    width: ca;
-  }
-  .w-\[cal\] {
-    width: cal;
-  }
-  .w-\[calc\(\%\)\] {
-    width: calc(%);
-  }
-  .w-\[calc\(\)\] {
-    width: calc();
-  }
-  .w-\[calc\(7\)\] {
-    width: calc(7);
-  }
-  .w-\[calc\(70\)\] {
-    width: calc(70);
-  }
-  .w-\[calc\] {
-    width: calc;
-  }
-  .w-\[calz\] {
-    width: calz;
-  }
-  .w-\[calzz\] {
-    width: calzz;
-  }
-  .w-\[calzzz\] {
-    width: calzzz;
-  }
-  .w-\[calzzzz\] {
-    width: calzzzz;
-  }
-  .w-\[calzzzzz\] {
-    width: calzzzzz;
-  }
-  .w-\[calzzzzzz\] {
-    width: calzzzzzz;
-  }
   .w-full {
     width: 100%;
   }
@@ -324,6 +281,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -352,21 +312,6 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-\[3\] {
-    gap: 3;
-  }
-  .gap-\[31\] {
-    gap: 31;
-  }
-  .gap-\[31p\] {
-    gap: 31p;
-  }
-  .gap-\[31pc\] {
-    gap: 31pc;
-  }
-  .gap-\[31px\] {
-    gap: 31px;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -381,6 +326,9 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-paragraph {
+    background-color: var(--color-paragraph);
+  }
   .bg-sectionbackground {
     background-color: var(--color-sectionbackground);
   }
@@ -389,9 +337,6 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -402,68 +347,20 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .px-9 {
-    padding-inline: calc(var(--spacing) * 9);
-  }
   .px-22 {
     padding-inline: calc(var(--spacing) * 22);
   }
   .px-24 {
     padding-inline: calc(var(--spacing) * 24);
   }
-  .px-33 {
-    padding-inline: calc(var(--spacing) * 33);
-  }
-  .px-44 {
-    padding-inline: calc(var(--spacing) * 44);
-  }
-  .px-66 {
-    padding-inline: calc(var(--spacing) * 66);
-  }
-  .px-93 {
-    padding-inline: calc(var(--spacing) * 93);
-  }
-  .px-933 {
-    padding-inline: calc(var(--spacing) * 933);
-  }
-  .px-\[2\] {
-    padding-inline: 2;
-  }
-  .px-\[26\] {
-    padding-inline: 26;
-  }
-  .px-\[265\] {
-    padding-inline: 265;
-  }
-  .px-\[265p\] {
-    padding-inline: 265p;
-  }
-  .px-\[265px\] {
-    padding-inline: 265px;
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
-  }
-  .py-\[8\] {
-    padding-block: 8;
-  }
-  .py-\[80\] {
-    padding-block: 80;
-  }
-  .py-\[80p\] {
-    padding-block: 80p;
-  }
-  .py-\[80px\] {
-    padding-block: 80px;
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
@@ -501,8 +398,14 @@
     font-size: var(--text-xs);
     line-height: calc(var(--spacing) * 3);
   }
+  .text-\[a\] {
+    color: a;
+  }
   .text-black {
     color: var(--color-black);
+  }
+  .text-paragraph {
+    color: var(--color-paragraph);
   }
   .text-white {
     color: var(--color-white);
