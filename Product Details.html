@@ -1,46 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/src/output.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="border-b border-gray-300 bg-backgound">
+      <div class="container mx-auto row justify-between py-4">
+        <div class="nav hidden justify-start flex-1 lg:block">
+          <ul class="row gap-8">
+            <li class="link"><a href="#">SHOP</a></li>
+            <li class="link"><a href="#">NEW IN</a></li>
+            <li class="link"><a href="#">COLLECTION</a></li>
+            <li class="link"><a href="#">JOURNAL</a></li>
+          </ul>
+        </div>
 
-     <header class="border-b bg-backgound">
-    <div class="container mx-auto row justify-between py-4">
-      <div class="nav hidden justify-start flex-1  lg:block">
-        <ul class="row gap-8 ">
-          <li class="link"><a href="#">SHOP</a></li>
-          <li class="link"><a href="#">NEW IN</a></li>
-          <li class="link"><a href="#">COLLECTION</a></li>
-          <li class="link"><a href="#">JOURNAL</a></li>
-        </ul>
+        <div class="header-logo justify-center flex-1 px-8 lg:px-0">
+          <img
+            src="./assets/img/landing page/header-logo.png"
+            alt="header-logo"
+          />
+        </div>
+
+        <div class="row gap-6 px-8 justify-endflex-1 lg:px-0">
+          <a href="#"
+            ><img
+              src="./assets/img/landing page/search icon.svg"
+              alt="search icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/img/landing page/account icon.svg"
+              alt="account icon"
+          /></a>
+          <a href="#"
+            ><img src="./assets/img/landing page/cart icon.svg" alt="cart icon"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="py-12">
+      <div class="add product container mx-auto flex flex-col md:flex-row gap-6 md:gap-0">
+        <div class="flex flex-col flex-1 gap-4">
+          <img src="./assets/img/product details/main1.png" alt="main1" />
+          <img src="./assets/img/product details/main2.png" alt="main2" />
+          <img src="./assets/img/product details/main3.png" alt="main3" />
+        </div>
+
+        <div class="flex-1">
+          <div class="flex flex-col pl-12 pr-12 md:pr-0 gap-8 ">
+            <div>
+              <div><span class="text-xs">OUTERWEAR</span></div>
+              <div ><h2 class=" sm:text-4xl">The Sculpted Wool Overcoat</h2></div>
+              <div class="pt-2"><span class="text-black py-4 ">$1,250.00</span></div>
+            </div>
+
+            <div>
+              <p>
+                A definitive piece for the modern wardrobe. Expertly cut from
+                Italian double-faced wool, this coat features a structured
+                shoulder and a clean, hidden placket for a seamless silhouette.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-6">
+
+            <div>
+            <span class="text-xs">COLOR: CARBON</span>
+
+            <div class="flex gap-3">
+              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-black rounded-lg p-4 "></button></div>
+              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-[#4A4A48] rounded-lg p-4 "></button></div>
+              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-[#E6E6E3] rounded-lg p-4 "></button></div>
+            </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+
+              <div class="flex items-center justify-between">
+                <span class="text-xs">SIZE</span>
+                <a class="underline link" href="ShopAll.html">Size Guide</a>
+              </div>
+              <div class="flex gap-2 w-full">
+                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3  flex-1">XS</button>
+                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3 flex-1">S</button>
+                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3 flex-1">M</button>
+                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3  flex-1">L</button>
+              </div>
+            </div>
+
+            <div>
+
+              <button class=" py-4 bg-black text-white text-xs/3 md:text-xs  w-full" >ADD TO CART</button>
+               <button class="flex items-center justify-center gap-0.5 py-4  text-xs/3 md:text-xs  w-full" ><img src="./assets/img/product details/heart.svg" alt="heart"> SAVE TO WISHLIST</button>
+
+
+            </div>
+
+
+            </div>
+
+            <div>
+
+              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >DESCRIPTION <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
+              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >FABRIC & CARE <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
+              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >DELIVERY & RETURNS <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
+
+
+
+
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      
       </div>
 
-      <div class="header-logo justify-center flex-1 px-8 lg:px-0">
-        <img src="./assets/img/landing page/header-logo.png" alt="header-logo">
-      </div>
 
-      <div class="row gap-6 px-8 justify-endflex-1 lg:px-0">
-        <a href="#"><img  src="./assets/img/landing page/search icon.svg" alt="search icon"></a>
-       <a href="#"><img src="./assets/img/landing page/account icon.svg" alt="account icon"></a>
-       <a href="#"><img src="./assets/img/landing page/cart icon.svg" alt="cart icon"></a>
-      </div>
 
-   </div>
-  </header>
-
-  <main>
-
-    
-  </main>
-
-  
-
-</body>
+    </main>
+  </body>
 </html>
