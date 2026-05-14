@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="border-b border-gray-200 bg-backgound">
+      <div class="container mx-auto row justify-between py-4">
+        <div class="header-logo px-8 lg:px-0">
+          <img
+            src="./assets/img/landing page/header-logo.png"
+            alt="header-logo"
+          />
+        </div>
+
+        <div class="nav hidden lg:block">
+          <ul class="row gap-8">
+            <li class="link"><a href="ShopAll.html">SHOP</a></li>
+            <li class="link"><a href="#">NEW IN</a></li>
+            <li class="link"><a href="#">COLLECTION</a></li>
+            <li class="link"><a href="#">JOURNAL</a></li>
+          </ul>
+        </div>
+
+        <div class="row gap-6 px-8 lg:px-0">
+          <a href="#"
+            ><img
+              src="./assets/img/landing page/search icon.svg"
+              alt="search icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/img/landing page/account icon.svg"
+              alt="account icon"
+          /></a>
+          <a href="cart.html"
+            ><img src="./assets/img/landing page/cart icon.svg" alt="cart icon"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-primery">
+      <section
+        class="mx-auto w-full md:w-[calc(80%)] lg:w-[calc(60%)] md:bg-white"
+      >
+        <form action="" class="flex flex-col gap-12 py-16 px-6">
+
+          <div class="bg-sectionbackground rounded-xl">   
+            <div class="p-6 flex flex-col sm:flex-row items-center justify-between">
+                <button class="flex text-xs sm:text-base gap-4"><img src="./assets/img/checkout/cart icon.svg" alt="">show order summary<img src="./assets/img/checkout/arrow.svg" alt=""></button>
+                <span class="text-black">$1,240.00</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+              <h2 class="text-2xl">Contact info</h2>
+              <p class="text-black text-xs">Already have an account? <a class="link underline" href="#">Log in</a></p>
+            </div>
+
+            <div>
+              
+                <label class="text-xs text-paragraph pb-2" for="">EMAIL ADDRESS</label>
+                <input type="email" placeholder="email@example.com"
+                  class="w-full bg-white border border-gray-300 p-4 focus:border-black rounded-lg"/>
+                <div class="flex items-center gap-3 cursor-pointer pt-4">
+                  <input type="checkbox" class=" border border-gray-300"/> 
+                  <span class="text-gray-700 text-sm">Email me with news and offers</span>
+                </div>
+              
+            </div>
+
+          </div>
+
+          <div>
+
+            <h2 class="text-2xl pb-6">Shipping address</h2>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="col-span-2 sm:col-span-1">
+              <label class="text-xs text-paragraph pb-2" for="">FIRST NAME</label>
+            <input type="text" class="w-full border border-gray-300 bg-white p-4 focus:border-black rounded-lg">
+            </div >
+            <div class="col-span-2 sm:col-span-1" >
+              <label class="text-xs text-paragraph pb-2" for="">LAST NAME</label>
+            <input type="text"  class="w-full border bg-white border-gray-300 p-4 focus:border-black rounded-lg">
+            </div>
+            <div class="col-span-2" >
+              <label class="text-xs text-paragraph pb-2" for="">ADDRESS</label>
+            <input type="text" placeholder="House number and street name"
+                  class="w-full border bg-white border-gray-300 p-4 focus:border-black rounded-lg"/>
+            </div>
+            <div class="col-span-2" >
+              <label class="text-xs text-paragraph pb-2" for="">APARTMENT, SUITE, ETC. (OPTIONAL)</label>
+            <input type="text" 
+                  class="w-full border bg-white border-gray-300 p-4 focus:border-black rounded-lg"/>
+            </div>
+            <div class="col-span-2 sm:col-span-1" >
+              <label class="text-xs text-paragraph pb-2" for="">CITY</label>
+            <input type="text"  class="w-full bg-white border border-gray-300 p-4 focus:border-black rounded-lg">
+            </div>
+            <div class="col-span-2 sm:col-span-1" >
+              <label class="text-xs text-paragraph pb-2" for="">POSTAL CODE</label>
+            <input type="text"  class="w-full bg-white border border-gray-300 p-4 focus:border-black rounded-lg">
+            </div>
+            </div>
+            
+
+
+          </div>
+
+          <div>
+
+            <h2 class="text-2xl pb-6">Shipping method</h2>
+
+            <div >
+
+              <div class="flex flex-col sm:flex-row items-center justify-between cursor-pointer p-4 border border-gray-300 rounded-t-lg">
+                  <div>
+                    <input type="radio" name="Shipping" class=" border border-gray-300"/> 
+                     <span class=" text-black text-xs sm:text-sm">Standard Shipping (3-5 business days)</span>
+                  </div>
+
+                  <span class="text-black text-xs sm:text-sm">FREE</span>
+              </div>
+              <div class="flex flex-col sm:flex-row items-center justify-between cursor-pointer p-4 border border-gray-300 rounded-b-lg">
+                  <div>
+                    <input type="radio" name="Shipping"  class=" border border-gray-300"/> 
+                     <span class="text-black text-xs sm:text-sm">Express Shipping (1-2 business days)</span>
+                  </div>
+
+                  <span class="text-black text-xs sm:text-sm">$25.00</span>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <div>
+
+            <div class=" pb-6">
+              <h2 class="text-2xl">Payment details</h2>
+            <p class="text-xs">All transactions are secure and encrypted.</p>
+            </div>
+
+            <div class="bg-sectionbackground rounded-lg">
+
+              <div class="p-6">
+                <div class="flex items-center justify-between border-b border-gray-300 pb-4">
+                <h3>Credit card</h3>
+                <img src="./assets/img/checkout/cart icon.svg" alt="cart icon">
+               </div>
+
+              <div class="grid grid-cols-2 gap-4 pt-4">
+               <div class="col-span-2 ">
+              <label class="text-xs text-paragraph pb-2" for="">CARD NUMBER</label>
+            <input type="text" placeholder="0000 0000 0000 0000" class="w-full border border-gray-300 bg-white p-4 focus:border-black rounded-lg ">
+                </div >
+               <div class="col-span-2 sm:col-span-1" >
+              <label class="text-xs text-paragraph pb-2" for="">EXPIRATION DATE (MM/YY)</label>
+            <input type="text" placeholder="MM / YY"  class="w-full border bg-white border-gray-300 p-4 focus:border-black rounded-lg">
+               </div>
+               <div class="col-span-2 sm:col-span-1" >
+              <label class="text-xs text-paragraph pb-2" for="">SECURITY CODE</label>
+            <input type="text" placeholder="CVV" class="w-full border bg-white border-gray-300 p-4 focus:border-black rounded-lg">
+               </div>
+           
+              </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="border-t border-gray-300">
+            <div class="pt-8">
+              <button class="bg-black text-white py-6 rounded-xl w-full">PLACE ORDER</button>
+              <span class="text-sm text-black flex items-center justify-center gap-2 py-4"><img src="./assets/img/checkout/mark icon.svg" alt="mark icon">Secure checkout enabled</span>
+            </div>
+          </div>
+
+          
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-sectionbackground border-t border-gray-300">
+      <div
+        class="container mx-auto py-16 flex flex-col sm:flex-row gap-12 justify-around border-b px-10 sm:px-0"
+      >
+        <div class="flex-1 flex flex-col gap-4">
+          <img
+            class="w-full"
+            src="./assets/img/landing page/footer-logo.png"
+            alt="footer-logo"
+          />
+          <p class="text-xs">
+            Elevated essentials crafted with intentionality. Defining the modern
+            wardrobe through architectural design and premium materials.
+          </p>
+        </div>
+
+        <div class="flex-1 flex flex-col gap-2">
+          <h3 class="text-sm">SHOP</h3>
+          <ul class="flex flex-col gap-2 text-start">
+            <li class="link"><a href="">Collections</a></li>
+            <li class="link"><a href="">New In</a></li>
+            <li class="link"><a href="">Accessories</a></li>
+            <li class="link"><a href="">Journal</a></li>
+          </ul>
+        </div>
+        <div class="flex-1 flex flex-col gap-2">
+          <h3 class="text-sm">INFORMATION</h3>
+          <ul class="flex flex-col gap-2 text-start">
+            <li class="link"><a href="">Shipping</a></li>
+            <li class="link"><a href="">Returns</a></li>
+            <li class="link"><a href="">Privacy Policy</a></li>
+            <li class="link"><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="flex-1 flex flex-col gap-2">
+          <h3 class="text-sm">CONNECT</h3>
+          <ul class="flex flex-col gap-2 text-start">
+            <li class="link"><a href="">Instagram</a></li>
+            <li class="link"><a href="">Pinterest</a></li>
+            <li class="link"><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto pt-8 pb-16 flex flex-col sm:flex-row justify-center sm:justify-between text-center"
+      >
+        <span class="text-xs">© 2024 ATELIER. ALL RIGHTS RESERVED.</span>
+        <span class="text-xs">INTERNATIONAL USD ($)</span>
+      </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
