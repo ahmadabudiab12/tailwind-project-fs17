@@ -50,7 +50,9 @@
     </header>
 
     <main class="py-12">
-      <div class="add product container mx-auto flex flex-col md:flex-row gap-6 md:gap-0">
+      <section
+        class="add product container mx-auto flex flex-col md:flex-row gap-6 md:gap-0"
+      >
         <div class="flex flex-col flex-1 gap-4">
           <img src="./assets/img/product details/main1.png" alt="main1" />
           <img src="./assets/img/product details/main2.png" alt="main2" />
@@ -58,11 +60,13 @@
         </div>
 
         <div class="flex-1">
-          <div class="flex flex-col pl-12 pr-12 md:pr-0 gap-8 ">
+          <div class="flex flex-col pl-12 pr-12 md:pr-0 gap-8">
             <div>
               <div><span class="text-xs">OUTERWEAR</span></div>
-              <div ><h2 class=" sm:text-4xl">The Sculpted Wool Overcoat</h2></div>
-              <div class="pt-2"><span class="text-black py-4 ">$1,250.00</span></div>
+              <div><h2 class="sm:text-4xl">The Sculpted Wool Overcoat</h2></div>
+              <div class="pt-2">
+                <span class="text-black py-4">$1,250.00</span>
+              </div>
             </div>
 
             <div>
@@ -74,65 +78,361 @@
             </div>
 
             <div class="flex flex-col gap-6">
+              <div>
+                <span class="text-xs">COLOR: CARBON</span>
 
-            <div>
-            <span class="text-xs">COLOR: CARBON</span>
-
-            <div class="flex gap-3">
-              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-black rounded-lg p-4 "></button></div>
-              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-[#4A4A48] rounded-lg p-4 "></button></div>
-              <div class="border border-gray-100 hover:border-black rounded-lg p-0.5"><button class="bg-[#E6E6E3] rounded-lg p-4 "></button></div>
-            </div>
-            </div>
-
-            <div class="flex flex-col gap-3">
-
-              <div class="flex items-center justify-between">
-                <span class="text-xs">SIZE</span>
-                <a class="underline link" href="ShopAll.html">Size Guide</a>
+                <div class="flex gap-3">
+                  <div
+                    class="border border-gray-100 focus-within:border-black rounded-lg p-0.5"
+                  >
+                    <button
+                      class="cursor-pointer bg-black rounded-lg p-4"
+                    ></button>
+                  </div>
+                  <div
+                    class="border border-gray-100 focus-within:border-black rounded-lg p-0.5"
+                  >
+                    <button
+                      class="cursor-pointer bg-[#4A4A48] rounded-lg p-4"
+                    ></button>
+                  </div>
+                  <div
+                    class="border border-gray-100 focus-within:border-black rounded-lg p-0.5"
+                  >
+                    <button
+                      class="cursor-pointer bg-[#E6E6E3] rounded-lg p-4"
+                    ></button>
+                  </div>
+                </div>
               </div>
-              <div class="flex gap-2 w-full">
-                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3  flex-1">XS</button>
-                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3 flex-1">S</button>
-                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3 flex-1">M</button>
-                <button class="border border-gray-300 hover:border-black py-1 md:py-2 lg:py-3  flex-1">L</button>
+
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs">SIZE</span>
+                  <a class="underline link" href="ShopAll.html">Size Guide</a>
+                </div>
+                <div class="flex gap-2 w-full">
+                  <button
+                    class="cursor-pointer border border-gray-300 focus:border-black py-1 md:py-2 lg:py-3 flex-1"
+                  >
+                    XS
+                  </button>
+                  <button
+                    class="cursor-pointer border border-gray-300 focus:border-black py-1 md:py-2 lg:py-3 flex-1"
+                  >
+                    S
+                  </button>
+                  <button
+                    class="cursor-pointer border border-gray-300 focus:border-black py-1 md:py-2 lg:py-3 flex-1"
+                  >
+                    M
+                  </button>
+                  <button
+                    class="cursor-pointer border border-gray-300 focus:border-black py-1 md:py-2 lg:py-3 flex-1"
+                  >
+                    L
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="cursor-pointer py-4 bg-black text-white text-xs/3 md:text-xs w-full"
+                >
+                  ADD TO CART
+                </button>
+                <button
+                  class="cursor-pointer flex items-center justify-center gap-0.5 py-4 text-xs/3 md:text-xs w-full"
+                >
+                  <img
+                    src="./assets/img/product details/heart.svg"
+                    alt="heart"
+                  />
+                  SAVE TO WISHLIST
+                </button>
               </div>
             </div>
 
             <div>
-
-              <button class=" py-4 bg-black text-white text-xs/3 md:text-xs  w-full" >ADD TO CART</button>
-               <button class="flex items-center justify-center gap-0.5 py-4  text-xs/3 md:text-xs  w-full" ><img src="./assets/img/product details/heart.svg" alt="heart"> SAVE TO WISHLIST</button>
-
-
+              <button
+                class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full"
+              >
+                DESCRIPTION
+                <img
+                  class="hover:scale-120 cursor-pointer"
+                  src="./assets/img/product details/++icon.svg"
+                  alt="++icon"
+                />
+              </button>
+              <button
+                class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full"
+              >
+                FABRIC & CARE
+                <img
+                  class="hover:scale-120 cursor-pointer"
+                  src="./assets/img/product details/++icon.svg"
+                  alt="++icon"
+                />
+              </button>
+              <button
+                class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full"
+              >
+                DELIVERY & RETURNS
+                <img
+                  class="hover:scale-120 cursor-pointer"
+                  src="./assets/img/product details/++icon.svg"
+                  alt="++icon"
+                />
+              </button>
             </div>
-
-
-            </div>
-
-            <div>
-
-              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >DESCRIPTION <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
-              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >FABRIC & CARE <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
-              <button class="border-y border-gray-300 flex items-center justify-between py-6 text-xs w-full" >DELIVERY & RETURNS <img class="hover:scale-120" src="./assets/img/product details/++icon.svg" alt="++icon"></button>
-
-
-
-
-
-            </div>
-
-
-
           </div>
+        </div>
+      </section>
 
+      <section class="container mx-auto p-6 my-20 md:p-0">
+        <div class="flex text-center pb-12 justify-center">
+          <h2 class="text-2xl">Styled With</h2>
         </div>
 
-      
-      </div>
+        <div class="flex flex-col sm:flex-row items-center gap-6">
+          <a href="Product Details.html">
+            <div class="flex flex-col gap-4">
+              <img
+                src="./assets/img/product details/styled with1.png"
+                alt="styled with1"
+              />
+              <div class="flex flex-col gap-1">
+                <span class="text-xs">FOOTWEAR</span>
+                <h3 class="text-xs">Chelsea Boot 01</h3>
+                <span class="text-xs">$620.00</span>
+              </div>
+            </div>
+          </a>
+          <a href="Product Details.html">
+            <div class="flex flex-col gap-4">
+              <img
+                src="./assets/img/product details/styled with2.png"
+                alt="styled with2"
+              />
+              <div class="flex flex-col gap-1">
+                <span class="text-xs">KNITWEAR</span>
+                <h3 class="text-xs">Ribbed Cashmere Polo</h3>
+                <span class="text-xs">$450.00</span>
+              </div>
+            </div>
+          </a>
+          <a href="Product Details.html">
+            <div class="flex flex-col gap-4">
+              <img
+                src="./assets/img/product details/styled with3.png"
+                alt="styled with1"
+              />
+              <div class="flex flex-col gap-1">
+                <span class="text-xs">TROUSERS</span>
+                <h3 class="text-xs">Tailored Straight Leg</h3>
+                <span class="text-xs">$380.00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
 
+      <section
+        class="Customer Reviews container mx-auto flex flex-col px-10 md:px-0 md:flex-row gap-25 border-t border-gray-200 py-20"
+      >
+        <div class="flex flex-col items-start gap-4 flex-1">
+          <h2 class="text-xl md:text-3xl">Customer Reviews</h2>
 
+          <span class="py-4"
+            ><span class="text-3xl text-black">4.8</span> /5.0</span
+          >
+
+          <div class="flex">
+            <img src="./assets/img/product details/star.svg" alt="star" />
+            <img src="./assets/img/product details/star.svg" alt="star" />
+            <img src="./assets/img/product details/star.svg" alt="star" />
+            <img src="./assets/img/product details/star.svg" alt="star" />
+            <img src="./assets/img/product details/star.svg" alt="star" />
+          </div>
+
+          <p>Based on 124 reviews</p>
+
+          <div class="w-full py-5 flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+              <span>5</span>
+              <div class="flex-1 h-0.5 bg-gray-200">
+                <div class="h-full w-[85%] bg-black"></div>
+              </div>
+              <span>85%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span>4</span>
+              <div class="flex-1 h-0.5 bg-gray-200">
+                <div class="h-full w-[10%] bg-black"></div>
+              </div>
+              <span>10%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span>3</span>
+              <div class="flex-1 h-0.5 bg-gray-200">
+                <div class="h-full w-[3%] bg-black"></div>
+              </div>
+              <span>3%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span>2</span>
+              <div class="flex-1 h-0.5 bg-gray-200">
+                <div class="h-full w-[1%] bg-black"></div>
+              </div>
+              <span>1%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span>1</span>
+              <div class="flex-1 h-0.5 bg-gray-200">
+                <div class="h-full w-[1%] bg-black"></div>
+              </div>
+              <span>1%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-16 flex-2">
+          <div class="flex flex-col gap-6 pb-12 border-b border-gray-200">
+            <div class="flex flex-col gap-2">
+              <div class="flex">
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+              </div>
+              <h3 class="text-lg md:text-xl">Exceptional craftsmanship</h3>
+
+              <div class="info flex items-center justify-start gap-4">
+                <span class="text-sm">JULIAN V.</span>
+                <span class="text-xs">February 28, 2024</span>
+              </div>
+            </div>
+
+            <p class="text-sm">
+              The silhouette is perfectly architectural. The wool is substantial
+              yet moves beautifully. It truly is the definitive overcoat for a
+              minimalist wardrobe.
+            </p>
+          </div>
+          <div class="flex flex-col gap-6 pb-12 border-b border-gray-200">
+            <div class="flex flex-col gap-2">
+              <div class="flex">
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+              </div>
+              <h3 class="text-lg md:text-xl">Exceptional craftsmanship</h3>
+
+              <div class="info flex items-center justify-start gap-4">
+                <span class="text-sm">JULIAN V.</span>
+                <span class="text-xs">February 28, 2024</span>
+              </div>
+            </div>
+
+            <p class="text-sm">
+              The silhouette is perfectly architectural. The wool is substantial
+              yet moves beautifully. It truly is the definitive overcoat for a
+              minimalist wardrobe.
+            </p>
+          </div>
+          <div class="flex flex-col gap-6 pb-12 border-b border-gray-200">
+            <div class="flex flex-col gap-2">
+              <div class="flex">
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+                <img src="./assets/img/product details/star.svg" alt="star" />
+              </div>
+              <h3 class="text-lg md:text-xl">Exceptional craftsmanship</h3>
+
+              <div class="info flex items-center justify-start gap-4">
+                <span class="text-sm">JULIAN V.</span>
+                <span class="text-xs">February 28, 2024</span>
+              </div>
+            </div>
+
+            <p class="text-sm">
+              The silhouette is perfectly architectural. The wool is substantial
+              yet moves beautifully. It truly is the definitive overcoat for a
+              minimalist wardrobe.
+            </p>
+          </div>
+          
+          <a class="link" href="#">SHOW ALL REVIEWS</a>
+        </div>
+      </section>
 
     </main>
+
+    <footer class="bg-sectionbackground">
+
+    <div class="container mx-auto py-16 flex flex-col sm:flex-row gap-12 justify-around border-b border-gray-200 px-10 sm:px-0">
+
+      <div class="flex-1 flex flex-col gap-4 ">
+        <img class="w-full" src="./assets/img/landing page/footer-logo.png" alt="footer-logo">
+        <p class="text-xs">Elevated essentials crafted with intentionality. Defining the modern wardrobe through architectural design and premium materials.</p>
+
+      </div>
+
+      <div class="flex-1 flex flex-col gap-2">
+
+        <h3 class="text-sm">SHOP</h3>
+        <ul class="flex flex-col gap-2 text-start">
+          <li class="link"><a href="">Collections</a></li>
+          <li class="link"><a href="">New In</a></li>
+          <li class="link"><a href="">Accessories</a></li>
+          <li class="link"><a href="">Journal</a></li>
+        </ul>
+
+
+      </div>
+      <div class="flex-1 flex flex-col gap-2">
+
+        <h3 class="text-sm">INFORMATION</h3>
+        <ul class="flex flex-col gap-2 text-start">
+          <li class="link"><a href="">Shipping</a></li>
+          <li class="link"><a href="">Returns</a></li>
+          <li class="link"><a href="">Privacy Policy</a></li>
+          <li class="link"><a href="">Terms of Service</a></li>
+        </ul>
+
+
+      </div>
+      <div class="flex-1 flex flex-col gap-2">
+
+        <h3 class="text-sm">CONNECT</h3>
+        <ul class="flex flex-col gap-2 text-start">
+          <li class="link"><a href="">Instagram</a></li>
+          <li class="link"><a href="">Pinterest</a></li>
+          <li class="link"><a href="">Contact</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+    <div class="pt-8 pb-16 text-center">
+
+      <span class="text-xs">© 2024 ATELIER. All rights reserved.</span>
+
+
+    </div>
+
+
+  </footer>
+
+
+
+
   </body>
 </html>
