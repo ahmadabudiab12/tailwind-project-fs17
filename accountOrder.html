@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>account</title>
     <link rel="stylesheet" href="./assets/src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +26,8 @@
           <ul class="row gap-8">
             <li class="link"><a href="ShopAll.html">SHOP</a></li>
             <li class="link"><a href="#">NEW IN</a></li>
-            <li class="link"><a href="#">COLLECTION</a></li>
-            <li class="link"><a href="#">JOURNAL</a></li>
+            <li class="link"><a href="checkout.html">CHECKOUT</a></li>
+            <li class="link"><a href="index.html">JOURNAL</a></li>
           </ul>
         </div>
 
@@ -37,7 +37,7 @@
               src="./assets/img/landing page/search icon.svg"
               alt="search icon"
           /></a>
-          <a href="#"
+          <a href="accountOrder.html"
             ><img
               src="./assets/img/landing page/account icon.svg"
               alt="account icon"
@@ -49,9 +49,9 @@
       </div>
     </header>
 
-    <main>
-      <section class="container mx-auto px-10 sm:px-19 md:px-25">
-        <div class="flex flex-col gap-12 py-19 px-6">
+    <main class="container mx-auto px-10  py-19 lg:px-25">
+      <section >
+        <div class="flex flex-col gap-12  px-6">
 
             <div class="flex flex-col items-start gap-2">
                <h1 class="text-3xl md:text-5xl">My account</h1>
@@ -66,14 +66,106 @@
                 </div>
              </div>
 
-             <div>
-              new div
-          
+             <div class="flex flex-col gap-6">
+
+              <div 
+              class="flex flex-col md:flex-row gap-2.5 items-center justify-between border border-gray-300 rounded-lg bg-primery p-8">
+
+                <div class="flex flex-col sm:flex-row justify-center gap-5 md:gap-10 items-start">
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">ORDER NUMBER</label>
+                  <span class="text-xs text-black">#AT-204859</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">DATE</label>
+                  <span class="text-xs text-black">October 12, 2023</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">STATUS</label>
+                  <span class="flex items-center justify-center gap-1 text-xs text-black"><div class="w-2 h-2 rounded-full bg-green-500"></div>Shipped</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">TOTAL</label>
+                  <span class="text-xs text-black">$1,240.00</span>
+                  </div>
+
+
+                </div>
+                <button class="text-xs px-6  py-3 border">VIEW DETAILS</button>
+
+              </div>
+
+              <div 
+              class="flex flex-col md:flex-row gap-2.5 items-center justify-between border border-gray-300 rounded-lg bg-primery p-8">
+
+                <div class="flex flex-col sm:flex-row justify-center gap-5 md:gap-10 items-start">
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">ORDER NUMBER</label>
+                  <span class="text-xs text-black">#AT-198342</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">DATE</label>
+                  <span class="text-xs text-black">September 24, 2023</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">STATUS</label>
+                  <span class="flex items-center justify-center gap-1 text-xs text-black"><div class="w-2 h-2 rounded-full bg-gray-500"></div>Delivered</span>
+                  </div>
+
+                  <div class="flex flex-col p-1 items-start">
+                  <label class="text-xs text-paragraph" for="">TOTAL</label>
+                  <span class="text-xs text-black">$450.00</span>
+                  </div>
+
+
+                </div>
+                <button class="text-xs px-6  py-3 border">VIEW DETAILS</button>
+
+              </div>
+        
              </div>
+
+
+             
 
          
           
         </div>
+      </section>
+
+      <section class=" border-t border-gray-300 py-19 px-6 ">
+
+      <div class="flex items-center  flex-col md:flex-row  md:pt-0 gap-12 ">
+        <div class="flex flex-col items-start gap-4 justify-start flex-1">
+           
+            <span class="text-xs">CURATED FOR YOU</span>
+            <h1
+              class=" text-xl xs:text-3xl md:text-2xl"
+            >
+              The Autumn Collection is now available in early access.
+            </h1>
+            <p class="text-sm">
+              As a preferred member, enjoy exclusive access to our newest pieces crafted from sustainable materials and timeless silhouettes.
+            </p>
+          
+
+          <a class="text-xs text-black underline link" href="ShopAll.html">DISCOVER MORE</a>
+
+          
+        </div>
+
+        <div class="flex-1">
+          <img src="./assets/img/account order/Editorial model.png" alt="Editorial model" />
+        </div>
+      </div>
+
+
+        
       </section>
     </main>
 
